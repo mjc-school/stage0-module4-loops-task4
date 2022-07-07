@@ -20,16 +20,16 @@ class NumberToBreakOnTest extends BaseIOTest {
 
         numberToBreakOn.printNumbersUntilWithBreakOn(5, 10);
 
-        assertOutEquals("1\n2\n3\n4\n5\n");
+        assertOutEquals("0\n1\n2\n3\n4\n");
     }
 
     @Test
     void printNumbersUntilWithBreakOnIterateUntilBiggerThanBreakOn() {
         NumberToBreakOn numberToBreakOn = new NumberToBreakOn();
 
-        numberToBreakOn.printNumbersUntilWithBreakOn(11, 10);
+        numberToBreakOn.printNumbersUntilWithBreakOn(6, 5);
 
-        assertOutEquals("iterating till the end");
+        assertOutEquals("iterating till the end\n0\n1\n2\n3\n4\n");
     }
 
     @Test
